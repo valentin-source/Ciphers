@@ -1,12 +1,17 @@
 public class Test {
     public static void main(String[] args) {
-        String s = "Hello World!";
-        String k = "FritzlfrimpftJava";
-        char[] c = XOR.encrypt(s.toCharArray(), k.toCharArray());
-        System.out.println("String: " + s);
-        System.out.println("Key: " + k);
-        System.out.print("Encrypted: ");XOR.printCharArray(c);
-        c = XOR.encrypt(c, k.toCharArray());
-        System.out.print("Decrypted: ");XOR.printCharArray(c);
+        testXOR("Hallo Du Da", "00100100100111111111010010000101000100000100000000111010110101010100010011");
     }
+
+
+
+    public static void testXOR(String input, String key){
+        System.out.println("String: " + input + "\nKey: " + key);
+
+        char[] c = XOR.encrypt(input.toCharArray(), key.toCharArray());
+        System.out.println("Encrypted: " + XOR.charArrayToString(c));
+        c = XOR.encrypt(c, key.toCharArray());
+        System.out.println("Decrypted: " + XOR.charArrayToString(c));
+    }
+
 }
