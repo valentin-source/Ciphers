@@ -9,7 +9,9 @@
 
 ###Code can be compiled & run with:
 ```bash
-javac Test.java XOR.java
+javac Test.java XOR.java Cesar.java
 java Test
 ```
 ---
+
+
