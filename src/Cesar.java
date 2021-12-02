@@ -1,7 +1,9 @@
 public class Cesar {
 
+    //Alphabet
     static char[] a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:;!\"§$%&/()=? ".toCharArray();
 
+    //Encrypts the message
     public static String encrypt(String input, int key){
 
         char[] c = input.toCharArray();
@@ -14,6 +16,7 @@ public class Cesar {
         return charArrayToString(r);
     }
 
+    //gets the index of a given char in the alphabet string (Cesar.a)
     public static int getCharIndex(char x){
         for(int i = 0; i<a.length; i++){
             if(a[i] == x) return i;
