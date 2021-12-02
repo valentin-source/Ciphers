@@ -11,6 +11,19 @@ public class XOR {
         return result;
     }
 
+    //XORs every char with a char of the key (byte XOR byte)
+    public static String encrypt(String b, String k){
+        char[] by = b.toCharArray();
+        char[] key = k.toCharArray();
+        char[] result = new char[by.length];
+        for(int i = 0; i<by.length; i++){
+            result[i] = (char) (by[i]^key[i]);
+        }
+        return charArrayToString(result);
+    }
+
+
+
     //Just a simple helper function to print the char arrays
     public static void printCharArray(char[] c){
         for(char i : c){

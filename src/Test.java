@@ -8,10 +8,10 @@ public class Test {
     public static void testXOR(String input, String key){
         System.out.println("String: " + input + "\nKey: " + key);
 
-        char[] c = XOR.encrypt(input.toCharArray(), key.toCharArray());
-        System.out.println("Encrypted: " + XOR.charArrayToString(c));
-        c = XOR.encrypt(c, key.toCharArray());
-        System.out.println("Decrypted: " + XOR.charArrayToString(c));
+        String c = XOR.encrypt(input, key);
+        System.out.println("Encrypted: " + c);
+        c = XOR.encrypt(c, key);
+        System.out.println("Decrypted: " + c);
     }
 
 }
