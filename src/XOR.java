@@ -22,8 +22,6 @@ public class XOR {
         return charArrayToString(result);
     }
 
-
-
     //Just a simple helper function to print the char arrays
     public static void printCharArray(char[] c){
         for(char i : c){

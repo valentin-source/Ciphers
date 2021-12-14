@@ -1,7 +1,15 @@
 public class Test {
     public static void main(String[] args) {
         // testXOR("Hallo Du Da", "00100100100111111111010010000101000100000100000000111010110101010100010011");
-         testFeistel("Feistel Netzwerk mit Cesar Chiffre:)", 1000000);
+         //testFeistel("Ich höre bei VWL nicht zu", 1000000);
+
+        //System.out.println( doNothingFeistel.performFeistel("Hallo du da Valle"));
+
+        Vinegre v = new Vinegre("Hallo du da", "1029418310291802931");
+        System.out.println(v.encrypt());
+        v.in = v.encrypt();
+        System.out.println(v.encrypt());
+
         /*String tmp = "pruefung";
         for(int i = 0; i<13; i++){
             tmp = Cesar.encrypt(tmp, 2);

@@ -1,8 +1,8 @@
 public class Cesar {
 
     //Alphabet
-    //static char[] a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:;!\"§$%&/()=? ".toCharArray();
-    static char[] a = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+    static char[] a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,:;!\"§$%&/()=? ".toCharArray();
+    //static char[] a = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
     //Encrypts the message
     public static String encrypt(String input, int key){
