@@ -1,4 +1,4 @@
-# Ciphers
+# CiphersJava
 
 ---
 ### Collection of simple ciphers implemented in Java
